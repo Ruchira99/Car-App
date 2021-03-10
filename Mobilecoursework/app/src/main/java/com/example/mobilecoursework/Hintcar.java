@@ -131,5 +131,7 @@ public class Hintcar extends AppCompatActivity {
 
     public void submit(View view) {
         matchingCharacters();
+        textViewCheck.setText("");
+
     }
 }
