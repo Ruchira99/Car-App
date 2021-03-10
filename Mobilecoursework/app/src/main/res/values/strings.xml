@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Mobile coursework</string>
+    <string name="textview" />
+    <string name="button">Submit</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="identify_the_car_image">Identify the Car Image</string>
+    <string name="hints">Hints</string>
+    <string name="identify_the_car_make">Identify the Car Make</string>
+    <string name="submitBtn">Submit</string>
+    <string name="editText"></string>
+
 </resources>

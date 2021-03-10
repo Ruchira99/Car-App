@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileCoursework">
+        <activity android:name=".Advancedlevel"></activity>
+        <activity android:name=".Identifythecarimg" />
+        <activity android:name=".Hintcar" />
+        <activity android:name=".Identifythecarmake" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
