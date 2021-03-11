@@ -106,7 +106,9 @@ public class Hintcar extends AppCompatActivity {
         String carCharacters = textViewName.getText().toString();
 
         if (!(carType.contains(userInput))){
-            Toast toast = Toast.makeText(this, "Incorrect letter ! ", Toast.LENGTH_SHORT);
+
+            Toast toast = Toast.makeText(this, "WRONG ! ", Toast.LENGTH_SHORT);
+
             toast.show();
         }
 
@@ -122,16 +124,16 @@ public class Hintcar extends AppCompatActivity {
             textViewCheck.setText("CORRECT");
             textViewCheck.setTextColor(Color.parseColor("#32CD32"));
             btnNext.setText("Next");
-        }else if (btnNext.getText().toString().equalsIgnoreCase("Next")){
+        }else if (btnNext.getText().toString().equalsIgnoreCase("Next")) {
             btnNext.setText("Submit");
+            textViewCheck.setText("");
             generateCar();
             spacings();
         }
+
     }
 
     public void submit(View view) {
         matchingCharacters();
-        textViewCheck.setText("");
-
     }
 }

@@ -34,7 +34,7 @@ public class Identifythecarmake extends AppCompatActivity {
         textViewMessage = (TextView) findViewById(R.id.messagetextview);
         imageView = (ImageView) findViewById(R.id.imageView);
         dropDownMenu = (Spinner) findViewById(R.id.dropdownmenu);
-        btnNext = (Button) findViewById(R.id.button);
+        btnNext = (Button) findViewById(R.id.Identify);
         generatecar();
 
     }
