@@ -7,6 +7,10 @@
     <string name="hints">Hints</string>
     <string name="identify_the_car_make">Identify the Car Make</string>
     <string name="submitBtn">Submit</string>
-    <string name="editText"></string>
+    <string name="Btnsubmit">Next</string>
+    <string name="buttonSubmit">Submit</string>
+
+    <string name="editText" />
+    <string name="todo">TODO</string>
 
 </resources>

@@ -184,13 +184,9 @@ public class Identifythecarmake extends AppCompatActivity {
                     textViewCorrect.setTextColor(Color.parseColor("#FFFF00"));
                 }
             }
-        } else if (btnNext.getText().toString().equalsIgnoreCase("Next")) {
-            btnNext.setText("Submit");
-            textViewMessage.setText("");
-            textViewCorrect.setText("");
-            generatecar();
         }
     }
+
     public void submit (View view){
         check();
     }

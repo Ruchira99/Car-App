@@ -23,6 +23,7 @@ public class Hintcar extends AppCompatActivity {
     int randomCar;
     private String carType;
     private EditText editText;
+    int userClicks = 0;
 
 
     @Override
@@ -106,11 +107,10 @@ public class Hintcar extends AppCompatActivity {
         String carCharacters = textViewName.getText().toString();
 
         if (!(carType.contains(userInput))){
-
             Toast toast = Toast.makeText(this, "WRONG ! ", Toast.LENGTH_SHORT);
-
             toast.show();
         }
+
 
         for (int i = 0 ; i < carType.length(); i++){
             character = carType.charAt(i);
