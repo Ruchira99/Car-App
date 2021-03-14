@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mobile coursework</string>
+    <string name="app_name">Car Game</string>
     <string name="textview" />
     <string name="button">Submit</string>
     <string name="advanced_level">Advanced Level</string>
@@ -9,8 +9,6 @@
     <string name="submitBtn">Submit</string>
     <string name="Btnsubmit">Next</string>
     <string name="buttonSubmit">Submit</string>
-
     <string name="editText" />
     <string name="todo">TODO</string>
-
 </resources>

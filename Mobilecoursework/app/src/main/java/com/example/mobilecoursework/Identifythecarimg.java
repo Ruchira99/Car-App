@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
@@ -22,11 +23,13 @@ public class Identifythecarimg extends AppCompatActivity {
     int carSetOne;
     int carSetTwo;
     int carSetThree;
+    int selectRandomArr;
     int userClicks = 0;
     Random randomCar = new Random();
 
     Integer[]imagesetOne = {
-            R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6, R.drawable.img7, R.drawable.img8, R.drawable.img9
+            R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6,
+            R.drawable.img7, R.drawable.img8, R.drawable.img9
     };
 
     Integer[]imagesetTwo ={
@@ -38,8 +41,6 @@ public class Identifythecarimg extends AppCompatActivity {
             R.drawable.img19, R.drawable.img20, R.drawable.img21, R.drawable.img22, R.drawable.img23, R.drawable.img24, R.drawable.img25,
             R.drawable.img26, R.drawable.img27, R.drawable.img28, R.drawable.img29, R.drawable.img30
     };
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,15 +55,46 @@ public class Identifythecarimg extends AppCompatActivity {
         btnNext = (Button)findViewById(R.id.btnsubmit);
         genareteCar();
 
+        if (savedInstanceState != null){
+            textViewName.setText(savedInstanceState.getString("textName"));
+            textViewAnswer.setText(savedInstanceState.getString("textAnswer"));
+
+            carSetOne = savedInstanceState.getInt("imagesOne");
+            imageView1.setImageResource(imagesetOne[carSetOne]);
+
+            carSetTwo = savedInstanceState.getInt("imagesTwo");
+            imageView2.setImageResource(imagesetTwo[carSetTwo]);
+
+            carSetThree = savedInstanceState.getInt("imagesThree");
+            imageView3.setImageResource(imagesetThree[carSetThree]);
+
+            btnNext.setText(savedInstanceState.getString("button"));
+            textViewAnswer.setTextColor(savedInstanceState.getInt("colorAnswer"));
+        }
+
     }
 
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("textName",textViewName.getText().toString());
+        outState.putString("textAnswer",textViewAnswer.getText().toString());
+        outState.putInt("imagesOne", carSetOne);
+        outState.putInt("imagesTwo", carSetTwo);
+        outState.putInt("imagesThree", carSetThree);
+        outState.putInt("array", selectRandomArr);
+        outState.putString("button", btnNext.getText().toString());
+        outState.putInt("colorAnswer", textViewAnswer.getCurrentTextColor());
+    }
 
     public void genareteCar(){
+        //Generating Integer
         carSetOne = randomCar.nextInt(9);
         carSetTwo = randomCar.nextInt(9);
         carSetThree = randomCar.nextInt(12);
 
-        int selectRandomArr = randomCar.nextInt(3);
+        //Generating Integer
+        selectRandomArr = randomCar.nextInt(3);
 
         imageView1.setImageResource(imagesetOne[carSetOne]);
         imageView2.setImageResource(imagesetTwo[carSetTwo]);
@@ -97,15 +129,13 @@ public class Identifythecarimg extends AppCompatActivity {
         }
     }
 
-
     public void submit(View view) {
-
         userClicks = 0;
         textViewAnswer.setText("");
         genareteCar();
-
     }
 
+    //Attempt one
     public void firstImage(View view) {
         if (userClicks == 0){
             userClicks++;
@@ -122,6 +152,7 @@ public class Identifythecarimg extends AppCompatActivity {
         }
     }
 
+    //Attempt Two
     public void secondImage(View view) {
         if (userClicks == 0){
             userClicks++;
@@ -138,6 +169,7 @@ public class Identifythecarimg extends AppCompatActivity {
         }
     }
 
+    //Attempt Three
     public void thirdImage(View view) {
         if (userClicks == 0){
             userClicks++;

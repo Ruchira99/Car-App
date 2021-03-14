@@ -18,10 +18,9 @@
         android:textStyle="normal|bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.056" />
 
     <TextView
         android:id="@+id/textViewCorrect"
@@ -33,37 +32,37 @@
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.879" />
 
     <ImageView
         android:id="@+id/ividentify1"
-        android:layout_width="160dp"
-        android:layout_height="141dp"
+        android:layout_width="162dp"
+        android:layout_height="148dp"
         android:contentDescription="@string/todo"
         android:onClick="firstImage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
+        app:layout_constraintVertical_bias="0.396"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/ividentify2"
-        android:layout_width="160dp"
-        android:layout_height="147dp"
+        android:layout_width="162dp"
+        android:layout_height="148dp"
         android:contentDescription="@string/todo"
         android:onClick="secondImage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.166"
+        app:layout_constraintVertical_bias="0.391"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
@@ -74,10 +73,10 @@
         android:onClick="thirdImage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523"
+        app:layout_constraintVertical_bias="0.393"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
@@ -90,8 +89,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987" />
+        app:layout_constraintVertical_bias="0.876" />
 </androidx.constraintlayout.widget.ConstraintLayout>
